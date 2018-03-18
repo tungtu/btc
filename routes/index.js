@@ -9,7 +9,7 @@ router.get('/', function (req, res, next) {
 });
 
 router.get('/api/btc', function (req, res, next) {
-	Prices.findOne({}, {}, {sort:{created_at:-1}}, function(err, result) {
+	Prices.findOne({}, {}, {sort:{_id:-1}}, function(err, result) {
 		if (err) throw err;
 		if (result) {
 			var json_test = {
