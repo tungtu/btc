@@ -74,8 +74,8 @@ var c = new Crawler({
 			var $ = res.$;
 
 			var time_update = $(".h-head small").text().split(" ");
-			var date = res[time_update.length - 1];
-			var time = res[time_update.length - 2];
+			var date = time_update[time_update.length - 1];
+			var time = time_update[time_update.length - 2];
 
 			var rate_usd = $("#quote_price").text();
 				rate_usd = rate_usd.substr(1);
@@ -107,7 +107,7 @@ var c = new Crawler({
 
 c.queue('https://webgia.com/tien-ao/bitcoin/');
 
-// var cron = require('node-cron');
+var cron = require('node-cron');
 
 cron.schedule('*/30 * * * *', function(){
 	c.queue('https://webgia.com/tien-ao/bitcoin/');
