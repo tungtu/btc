@@ -107,7 +107,7 @@ var c = new Crawler({
 
 c.queue('https://webgia.com/tien-ao/bitcoin/');
 
-var cron = require('node-cron');
+// var cron = require('node-cron');
 
 cron.schedule('*/30 * * * *', function(){
 	c.queue('https://webgia.com/tien-ao/bitcoin/');
