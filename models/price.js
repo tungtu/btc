@@ -1,6 +1,5 @@
 const mongoose = require('mongoose'),
 	Schema = mongoose.Schema;
-
 const PricesSchema = new Schema({
 		date_update: {
 			type: String,
