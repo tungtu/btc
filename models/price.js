@@ -12,13 +12,13 @@ const PricesSchema = new Schema({
 			type: String
 		},
 		rate_float_usd: {
-			type: String
+			type: Number
 		},
 		rate_vnd: {
 			type: String
 		},
 		rate_float_vnd: {
-			type: String
+			type: Number
 		}
 	},
 	{

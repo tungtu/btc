@@ -23,17 +23,18 @@ router.get('/api/btc', function (req, res, next) {
 						"symbol": "&#36;",
 						"rate": result.rate_usd,
 						"description": "United States Dollar",
-						"rate_float": result.rate_usd_float
+						"rate_float": result.rate_float_usd
 					},
 					"VND": {
 						"code": "VND",
 						"symbol": "VND",
 						"rate": result.rate_vnd,
 						"description": "Vietnam Dong",
-						"rate_float": result.rate_vnd_float
+						"rate_float": result.rate_float_vnd
 					}
 				}
 			};
+			console.log(json_test);
 			return res.json({statuscode : 200,results : json_test});
 		}
 	});
