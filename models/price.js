@@ -1,6 +1,6 @@
 const mongoose = require('mongoose'),
 	Schema = mongoose.Schema;
-
+var SchemaTypes = mongoose.Schema.Types;
 const PricesSchema = new Schema({
 		date_update: {
 			type: String,
@@ -18,7 +18,7 @@ const PricesSchema = new Schema({
 			type: String
 		},
 		rate_float_vnd: {
-			type: Number
+			type: SchemaTypes.Double
 		}
 	},
 	{
