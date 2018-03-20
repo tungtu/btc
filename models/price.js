@@ -18,7 +18,7 @@ const PricesSchema = new Schema({
 			type: String
 		},
 		rate_float_vnd: {
-			type: float
+			type: Number
 		}
 	},
 	{
