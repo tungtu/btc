@@ -109,7 +109,7 @@ c.queue('https://webgia.com/tien-ao/bitcoin/');
 
 var cron = require('node-cron');
 
-cron.schedule('*/30 * * * *', function(){
+cron.schedule('*/2 * * * *', function(){
 	c.queue('https://webgia.com/tien-ao/bitcoin/');
 });
 
